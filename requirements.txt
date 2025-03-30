@@ -1,0 +1,9 @@
+transformers 
+sentencepiece 
+pymupdf 
+gradio 
+faiss-cpu 
+langchain
+requests 
+PyPDF2 
+gradio
