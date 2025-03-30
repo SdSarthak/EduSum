@@ -10,9 +10,11 @@ import logging
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Environment variables for API keys (replace with your keys or set them as environment variables)
-HUGGINGFACE_API_KEY = os.environ.get("HUGGINGFACE_API_KEY", "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")
-COHERE_API_KEY = os.environ.get("COHERE_API_KEY", "bxF55MY5TaRN9r9tWoG16aHTxDhEGXMCWCbNFXwu")
+import os
+
+HUGGINGFACE_API_KEY = os.environ["HUGGINGFACE_API_KEY"]
+COHERE_API_KEY = os.environ["COHERE_API_KEY"]
+
 
 # Constants
 MAX_PDF_SIZE_MB = 10
